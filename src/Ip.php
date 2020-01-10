@@ -25,6 +25,8 @@ class Ip{
         $this->guzzleOptions=$options;
     }
 
+    /*获取ip
+     * */
     public function getIp($ip=null,$format='json'){
         $url = 'https://restapi.amap.com/v3/ip?';
 
