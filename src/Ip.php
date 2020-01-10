@@ -6,7 +6,7 @@ use GuzzleHttp\Client;
 use Dakele\Weather\Exceptions\HttpException;
 use Dakele\Weather\Exceptions\InvalidArgumentException;
 
-class Weather{
+class Ip{
 
     protected $key;
 
@@ -25,8 +25,8 @@ class Weather{
         $this->guzzleOptions=$options;
     }
 
-    public function getWeather($city,$type='base',$format='json'){
-        $url = 'https://restapi.amap.com/v3/weather/weatherInfo';
+    public function getIp($ip=null,$format='json'){
+        $url = 'https://restapi.amap.com/v3/ip?';
 
         if (!\in_array(\strtolower($format), ['xml', 'json'])) {
             throw new InvalidArgumentException('Invalid response format: '.$format);
@@ -40,9 +40,7 @@ class Weather{
 
         $query=array_filter([
             'key'=>$this->key,
-            'city'=>$city,
-            'output'=>$format,
-            'extensions'=>$type,
+            'ip'=>$ip,
         ]);
         try{
             $response=$this->getHttpClient()->get($url,[
