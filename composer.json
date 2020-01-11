@@ -18,11 +18,4 @@
             "Dakele\\Weather\\": "./src"
         }
     }
-//    "extra": {
-//        "laravel": {
-//            "providers": [
-//                "Dakele\\Weather\\ServiceProvider"
-//            ]
-//        }
-//    }
 }

@@ -37,6 +37,13 @@ class Ip{
 //        if (!\in_array(\strtolower($type), ['base', 'all'])) {
 //            throw new InvalidArgumentException('Invalid type value(base/all): '.$type);
 //        }
+        //    "extra": {
+//        "laravel": {
+//            "providers": [
+//                "Dakele\\Weather\\ServiceProvider"
+//            ]
+//        }
+//    }
 
 
 
