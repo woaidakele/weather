@@ -12,11 +12,11 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
             return new Weather(config('services.weather.key'));
         });
 
-        $this->app->alias(Weather::class, 'weather');
+        $this->app->alias([Weather::class, 'weather',Ipinfo::class, 'ipinfo']);
     }
 
     public function provides()
     {
-        return [Weather::class, 'weather'];
+        return [Weather::class, 'weather',Ipinfo::class, 'ipinfo'];
     }
 }

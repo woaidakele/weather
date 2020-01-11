@@ -6,7 +6,7 @@ use GuzzleHttp\Client;
 use Dakele\Weather\Exceptions\HttpException;
 use Dakele\Weather\Exceptions\InvalidArgumentException;
 
-class Ip{
+class Ipinfo{
 
     protected $key;
 
