@@ -17,12 +17,12 @@
         "psr-4": {
             "Dakele\\Weather\\": "./src"
         }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Dakele\\Weather\\ServiceProvider"
-            ]
-        }
     }
+//    "extra": {
+//        "laravel": {
+//            "providers": [
+//                "Dakele\\Weather\\ServiceProvider"
+//            ]
+//        }
+//    }
 }
